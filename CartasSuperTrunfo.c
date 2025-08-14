@@ -19,21 +19,21 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     char estado;
-    char codigo[3] = "A01";
-    char nomec[50] = "Socorro";
-    int populacao = 560000;
-    float area = 86729.82;
-    float pib = 700.22;
-    int turismo = 72;
+    char codigo[4];
+    char nomec[50];
+    int populacao;
+    float area;
+    float pib;
+    int turismo;
 
         printf("Qual o Estado? ");
-        scanf("%c", &estado);
+        scanf(" %c", &estado);
 
         printf("Codigo da cidade: ");
-        scanf("%s", codigo);
+        scanf(" %3s", codigo);
 
         printf("Nome da Cidade: ");
-        scanf("%s", nomec);
+        scanf(" %s", nomec);
 
         printf("Populacao: ");
         scanf("%i", &populacao);
@@ -56,13 +56,13 @@ int main() {
         int turismo2 = 62;
 
             printf("Qual o segundo Estado? ");
-            scanf("%c", &estado2);
+            scanf(" %c", &estado2);
 
             printf("Codigo da segunda cidade: ");
-            scanf("%s", codigo2);
+            scanf(" %3s", codigo2);
 
             printf("Nome da segunda Cidade: ");
-            scanf("%s", nomec2);
+            scanf(" %s", nomec2);
 
             printf("Populacao da segunda carta: ");
             scanf("%i", &populacao2);

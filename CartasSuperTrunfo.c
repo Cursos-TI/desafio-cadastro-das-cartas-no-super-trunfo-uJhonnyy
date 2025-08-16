@@ -33,7 +33,7 @@ int main() {
         scanf(" %3s", codigo);
 
         printf("Nome da Cidade: ");
-        scanf(" %s", nomec);
+        scanf(" %49s", nomec);
 
         printf("Populacao: ");
         scanf("%i", &populacao);
@@ -47,13 +47,13 @@ int main() {
         printf("Quantos pontos turísticos? ");
         scanf("%i", &turismo);
 
-        char estado2 = 'B';
-        char codigo2[3] = "A02";
-        char nomec2[50] = "Aracaju";
-        int populacao2 = 560022;
-        float area2 = 86729.71;
-        float pib2 = 700.33;
-        int turismo2 = 62;
+        char estado2;
+        char codigo2[4];
+        char nomec2[50];
+        int populacao2;
+        float area2;
+        float pib2;
+        int turismo2;
 
             printf("Qual o segundo Estado? ");
             scanf(" %c", &estado2);
@@ -62,7 +62,7 @@ int main() {
             scanf(" %3s", codigo2);
 
             printf("Nome da segunda Cidade: ");
-            scanf(" %s", nomec2);
+            scanf(" %49s", nomec2);
 
             printf("Populacao da segunda carta: ");
             scanf("%i", &populacao2);

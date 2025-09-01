@@ -94,6 +94,21 @@ int main() {
         printf("PIB: %f \n", pib2);
         printf("Pontos Turisticos: %i \n", turismo2);
 
+        if(populacao > populacao2){
+            printf("Carta 1 venceu!\n");
+        } else{
+            printf("Carta 2 venceu!\n");
+        }
+
+        printf("Carta 1 %s: Populacao de %d habitantes\n", nomec, populacao);
+        printf("Carta 2 %s: Populacao de %d habitantes\n", nomec2, populacao2);
+
+        if(populacao > populacao2){
+            printf("Carta Vencedora:%s", nomec);
+        } else{
+            printf("Carta Vencedora:%s", nomec2);
+        }
+
 
     return 0;
 }

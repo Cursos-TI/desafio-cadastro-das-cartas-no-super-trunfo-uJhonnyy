@@ -85,6 +85,21 @@ int main() {
         densidadepopulacional2 = (float) populacao2 / area2;
         pibpercapita2 = (float) pib2 / populacao2;
 
+        float Superpoder1, Superpoder2;
+
+        Superpoder1 = (float)(populacao + area + pib + turismo + pibpercapita1 + (1/densidadepopulacional1));
+        Superpoder2 = (float)(populacao2 + area2 + pib2 + turismo2 + pibpercapita2 + (1/densidadepopulacional2));
+
+        float resultadopopulacao, resultadoarea, resultadopib, resultadodensidadepopulacional, resultadopibpercapita, resultadopontosturisticos ,resultadosuperpoder;
+
+        resultadopopulacao = populacao > populacao2;
+        resultadoarea = area > area2;
+        resultadopib = pib > pib2;
+        resultadodensidadepopulacional = densidadepopulacional1 < densidadepopulacional2;
+        resultadopibpercapita = pibpercapita1 > pibpercapita2;
+        resultadopontosturisticos = turismo > turismo2;
+        resultadosuperpoder = Superpoder1 > Superpoder2;
+
 
         printf("Carta 1:\n");
         printf("Estado: %c\n", estado);
@@ -96,6 +111,7 @@ int main() {
         printf("Pontos Turisticos: %i\n", turismo);
         printf("Densidade Populacional é: %.2f\n", densidadepopulacional1);
         printf("PIB per capita é: %.2f\n", pibpercapita1);
+        printf("Superpoder da Carta 1: %.2f\n", Superpoder1);
 
         printf("Carta 2:\n");
         printf("Estado: %c \n", estado2);
@@ -107,6 +123,15 @@ int main() {
         printf("Pontos Turisticos: %i \n", turismo2);
         printf("Densidade Populacinal é: %.2f\n", densidadepopulacional2);
         printf("PIB per capita é: %.2f\n", pibpercapita2);
+        printf("Superpoder da Carta 2: %.2f\n", Superpoder2);
+
+            printf("Populacao: %.f\n", resultadopopulacao);
+            printf("Area: %.2f\n", resultadoarea);
+            printf("PIB: %.2f\n", resultadopib);
+            printf("Densidade populacional: %.2f\n", resultadodensidadepopulacional);
+            printf("PIB per capita: %.2f\n", resultadopibpercapita);
+            printf("Pontos Turisticos: %.2f\n", resultadopontosturisticos);
+            printf("Super poder: %.2f\n", resultadosuperpoder);
 
 
     return 0;
